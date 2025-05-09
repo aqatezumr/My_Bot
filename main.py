@@ -18,7 +18,7 @@ async def sum_numbers(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except:
         await update.message.reply_text("Use: /sum 4 5")
 
-app = ApplicationBuilder().token(7032229248:AAGsgYzua_Wng2-oFh1pIn0qOhhXIhPgDHU).build()
+app = ApplicationBuilder().token("7032229248:AAGsgYzua_Wng2-oFh1pIn0qOhhXIhPgDHU").build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("help", help_command))
 app.add_handler(CommandHandler("echo", echo))
